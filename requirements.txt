@@ -1,0 +1,15 @@
+crewai==0.76.9                   # Orquestra agentes e tarefas
+crewai-tools==0.13.4             # Ferramentas adicionais para CrewAI
+python-dotenv==1.0.1             # Carregar variáveis de ambiente do .env
+openai==1.54.0                   # API para LLMs da OpenAI (se necessário)
+requests==2.32.3                 # Chamadas HTTP (caso precise)
+streamlit==1.39.0                # Interface Web
+fpdf2==2.8.1                     # Manipulação de PDFs (se necessário)
+python-docx==0.8.11              # Geração de arquivos Word
+
+# Dependências adicionais caso necessário
+# Pillow==10.0.0                   # Imagens, dependência indireta de fpdf2
+# fonttools==4.54.1                # Fontes, dependência indireta de fpdf2
+# defusedxml==0.7.1                # Segurança para manipulação de XML, dependência de fpdf2
+
+

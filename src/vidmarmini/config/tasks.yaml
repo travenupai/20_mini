@@ -1,0 +1,86 @@
+customer_feedback_analysis:
+  description: >
+    Coletar e analisar feedbacks de consumidores sobre os produtos e serviços da empresa
+    do site {site_url} visando uma compreensão aprofundada das percepções e expectativas dos clientes.
+    Use plataformas de avaliação online, como Google Reviews e Reclame aqui, além de redes
+    sociais como facebook, twitter , instagram e linkedin, e de fóruns especializados, para identificar as reclamações mais comuns,
+    sugestões e preferências expressas pelos consumidores. Além disso, analise dados
+    internos de atendimento ao cliente, incluindo registros de chamadas, e-mails e
+    chats, para detectar padrões recorrentes que podem indicar áreas de melhoria.
+    Identifique os principais pontos de dor e as expectativas dos clientes, considerando
+    aspectos como qualidade, usabilidade, atendimento e suporte. Avalie também como
+    os clientes percebem os produtos em comparação com as ofertas dos concorrentes.
+    O objetivo desta tarefa é fornecer insights estratégicos que orientem melhorias
+    no desenvolvimento de produtos e ajustes em serviços, com base em uma compreensão
+    clara das demandas e necessidades do público-alvo.
+  expected_output: >
+    Um relatório detalhado com, no mínimo, 1200 palavras, que resuma as principais
+    preferências dos clientes, pontos de dor mais citados e sugestões relevantes
+    para aprimoramento. O relatório deve incluir exemplos específicos de feedbacks,
+    destacando comentários que demonstrem padrões importantes, como reclamações
+    frequentes ou elogios recorrentes. Além disso, inclua uma análise qualitativa
+    das expectativas dos consumidores e uma seção com recomendações práticas para
+    que a empresa do site {site_url} possa atender melhor as necessidades dos clientes. O relatório
+    deve estar estruturado para facilitar a identificação de oportunidades de
+    melhoria e conter sugestões de implementação imediata e a longo prazo,
+    baseadas nas percepções dos clientes.
+    A saída deve ser em Markdown. É muito importante que o texto não contenha coisas 
+    como " """ " markdown e "'''". """ ,
+  agent: customer_analysis_agent
+
+market_trends_monitoring:
+  description: >
+    Monitorar publicações, blogs especializados, e relatórios de mercado para captar
+    tendências emergentes e identificar tecnologias e práticas inovadoras que possam
+    impactar o setor da empresa do site {site_url}. Analise relatórios de consultorias, como McKinsey e
+    Gartner, além de artigos e seções de economia de grandes portais de notícias, para
+    observar mudanças no comportamento do consumidor e no ambiente regulatório.
+    Além disso, examine tendências econômicas, como variações na taxa de juros e
+    inflação, e como esses fatores podem afetar a demanda e o comportamento dos
+    consumidores. Identifique também inovações tecnológicas e práticas sustentáveis
+    que estejam ganhando popularidade, avaliando seu potencial impacto para a empresa.
+    O objetivo é manter a empresa atualizada sobre mudanças iminentes e fornecer
+    insights para que a empresa ajuste suas estratégias, garantindo uma vantagem
+    competitiva e resiliência no mercado.
+  expected_output: >
+    Um relatório de, no mínimo, 1200 palavras, destacando as tendências mais relevantes
+    para o setor que atua a empresa do site {site_url}, incluindo uma análise de oportunidades e ameaças potenciais. O
+    relatório deve incluir uma síntese das tendências observadas, segmentadas por
+    categorias, como “inovações tecnológicas”, “mudanças regulatórias”, e “fatores
+    econômicos”. Além disso, ofereça recomendações sobre como a empresa pode se
+    adaptar para tirar proveito dessas tendências, incluindo sugestões de novas
+    tecnologias a serem adotadas e práticas a serem implementadas para aumentar a
+    competitividade e sustentabilidade. Este relatório deve ajudar a empresa a
+    entender o contexto atual e a se preparar para as transformações do mercado
+    nos próximos anos.
+    A saída deve ser em Markdown. É muito importante que o texto não contenha coisas 
+    como " """ " markdown " e "'''". """ ,
+  agent: market_trends_agent
+
+product_comparison:
+  description: >
+    Avaliar e comparar as funcionalidades e especificações dos produtos da empresa do site {site_url}
+    com os dos principais concorrentes no mercado. Realize uma análise detalhada
+    das características técnicas, usabilidade, preço, e feedback dos consumidores
+    sobre os produtos rivais para entender o que os diferencia. Identifique
+    funcionalidades que são altamente valorizadas pelos consumidores e que
+    representam uma vantagem competitiva dos concorrentes. Além disso, colete
+    informações de avaliações online e de fóruns especializados para entender
+    os pontos fortes e fracos dos produtos concorrentes na perspectiva dos
+    consumidores. O objetivo desta tarefa é identificar áreas específicas de
+    melhoria e inovação para os produtos da empresa, criando oportunidades para
+    diferenciar-se no mercado e atender melhor as expectativas dos consumidores.
+  expected_output: >
+    Um relatório com no mínimo 1200 palavras, que ofereça uma comparação detalhada
+    entre os produtos da empresa e os dos concorrentes. Inclua seções como
+    “Principais Diferenciais”, “Pontos Fortes e Fracos dos Concorrentes”, e
+    “Oportunidades de Inovação”, com exemplos concretos de funcionalidades
+    ou características que representam uma vantagem no mercado. O relatório
+    deve conter recomendações de melhorias e inovações para que a empresa
+    possa superar ou igualar os concorrentes em aspectos críticos, como
+    qualidade, usabilidade e valor agregado. O objetivo final é fornecer uma
+    análise que ajude a empresa do site {site_url} a se destacar, aprimorando seus produtos com
+    base em insights competitivos e tendências do setor. 
+    A saída deve ser em Markdown. É muito importante que o texto não contenha coisas 
+    como " """ " markdown " e "'''". """ ,
+  agent: product_analysis_agent

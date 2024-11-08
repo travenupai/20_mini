@@ -1,0 +1,20 @@
+[project]
+name = "vidmarmini"
+version = "0.1.0"
+description = "vidmarmini using crewAI"
+authors = [{ name = "TravenUp AI", email = "ai.travenup@gmail.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.9,<1.0.0"
+    ]
+
+[project.scripts]
+vidmarmercado = "vidmarmini.main:run"
+run_crew = "vidmarmini.main:run"
+train = "vidmarmini.main:train"
+replay = "vidmarmini.main:replay"
+test = "vidmarmini.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
