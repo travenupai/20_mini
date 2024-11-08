@@ -25,7 +25,6 @@ class VidmarminiCrew():
 			config=self.agents_config['customer_analysis_agent'],
 			tools=[search_tool, scrape_tool],
 			verbose=True,
-			allow_delegation=True,
 			llm=MyLLM.gpt4o_mini_2024_07_18
 		)
 
@@ -34,7 +33,6 @@ class VidmarminiCrew():
 		return Agent(
 			config=self.agents_config['market_trends_agent'],
 			tools=[search_tool, scrape_tool, scrape_element_tool],
-			allow_delegation=True,
 			verbose=True,
 			llm=MyLLM.gpt4o_mini_2024_07_18
 		)
@@ -44,7 +42,6 @@ class VidmarminiCrew():
 		return Agent(
 			config=self.agents_config['product_analysis_agent'],
 			tools=[search_tool, scrape_tool, scrape_element_tool],
-			allow_delegation=True,
 			verbose=True,
 			llm=MyLLM.gpt4o_mini_2024_07_18
 		)
