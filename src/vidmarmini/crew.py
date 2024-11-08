@@ -26,8 +26,6 @@ class VidmarminiCrew():
 			tools=[search_tool, scrape_tool],
 			verbose=True,
 			allow_delegation=True,
-			allow_interruption=True,  # Permite interrupções para reagir rapidamente a mudanças nos produtos dos concorrentes
-			allow_fallback=True,      # Permite fallback caso precise de um especialista em tecnologia ou satisfação do cliente
 			llm=MyLLM.gpt4o_mini_2024_07_18
 		)
 
@@ -38,8 +36,6 @@ class VidmarminiCrew():
 			tools=[search_tool, scrape_tool, scrape_element_tool],
 			allow_delegation=True,
 			verbose=True,
-			allow_interruption=True,  # Permite interrupções para reagir rapidamente a mudanças nos produtos dos concorrentes
-            allow_fallback=True,      # Permite fallback caso precise de um especialista em tecnologia ou satisfação do cliente
 			llm=MyLLM.gpt4o_mini_2024_07_18
 		)
 
@@ -50,8 +46,6 @@ class VidmarminiCrew():
 			tools=[search_tool, scrape_tool, scrape_element_tool],
 			allow_delegation=True,
 			verbose=True,
-			allow_interruption=True,  # Permite interrupções para reagir rapidamente a mudanças nos produtos dos concorrentes
-            allow_fallback=True,      # Permite fallback caso precise de um especialista em tecnologia ou satisfação do cliente
 			llm=MyLLM.gpt4o_mini_2024_07_18
 		)
 
