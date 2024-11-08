@@ -6,13 +6,16 @@ from zipfile import ZipFile
 from docx import Document
 
 # Configuração do diretório src para importações
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "src")))
+current_dir = os.path.dirname(os.path.abspath(__file__))
+src_dir = os.path.join(current_dir, "src")
+if src_dir not in sys.path:
+    sys.path.insert(0, src_dir)
 
-# Importação do módulo VidmarmercadoCrew
 try:
-    from src.vidmarmini.crew import VidmarminiCrew
-except ModuleNotFoundError:
-    st.error("Não foi possível importar o módulo VidmarmercadoCrew. Verifique se o caminho está correto e se o módulo existe.")
+    from vidmarmini.crew import VidmarminiCrew
+except ModuleNotFoundError as e:
+    import streamlit as st
+    st.error(f"Erro ao importar VidmarminiCrew: {e}. Verifique se o caminho está correto.")
 
 # Configuração do título da aplicação
 st.title('Análise de Pesquisa de Mercado com AI Agents - CrewAI')
